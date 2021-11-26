@@ -1,0 +1,47 @@
+{
+  "name": "pl2h",
+  "version": "1.0.0",
+  "description": "pl2h",
+  "main": "./server/app.js",
+  "engine": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": "nodemon app",
+    "backend": "nodemon app",
+    "client": "cd .. && cd client && yarn start",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently --kill-others-on-fail \"yarn start\" \"npm run client\""
+  },
+  
+  "author": "pl2h",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "async": "^3.2.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.3",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "promise": "^8.1.0",
+    "sequelize": "^6.9.0",
+    "sequelize-cli": "^6.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
