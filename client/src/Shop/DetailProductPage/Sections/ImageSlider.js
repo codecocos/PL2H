@@ -3,7 +3,7 @@ import { Carousel } from "react-carousel-minimal";
 
 const ImageSlider = (props) => {
   const { images, brandName, description } = props.detail;
-  
+
   const captionStyle = {
     fontSize: "2em",
     fontWeight: "bold",
@@ -17,7 +17,7 @@ const ImageSlider = (props) => {
   {
     images.map((image, index) =>
       data.push({
-        image: `http://3.34.51.7:5000/${image}`,
+        image: `http://3.36.91.168:5000/${image}`,
       })
     );
   }

@@ -3,9 +3,9 @@ import React from "react";
 const UserCardBlock = (props) => {
   const renderCartImage = (images) => {
     let image = images[0];
-    return `http://3.34.51.7:5000/${image}`;
+    return `http://3.36.91.168:5000/${image}`;
   };
-  
+
   const renderItems = () =>
     props.products &&
     props.products.map((product) => (

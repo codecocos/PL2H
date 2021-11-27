@@ -59,7 +59,7 @@ const Main = (props) => {
       });
   };
 
- 
+
   // 더보기 버튼
   const loadMoreHandler = () => {
     let skip = Skip + Limit;
@@ -73,11 +73,11 @@ const Main = (props) => {
 
     getPosts(variables);
     setSkip(skip);
-  }; 
-  
+  };
+
   const [openModal, setOpenModal] = useState(false);
   const [Index, setIndex] = useState();
-  
+
   const PostArray = [];
   const renderCards = Posts.map((postData, index) => {
     PostArray.push(postData);
@@ -93,7 +93,7 @@ const Main = (props) => {
             <header>
               {/* 사용자 정보 */}
               <div class="profile-of-article">
-                <img class="img-profile pic" src={`http://3.34.51.7:5000/${postData.UserId.image}`} alt=" 프로필 사진" />
+                <img class="img-profile pic" src={`http://3.36.91.168:5000/${postData.UserId.image}`} alt=" 프로필 사진" />
                 <span class="userID main-id point-span"><Meta description={`${postData.UserId.name}`} /></span>
               </div>
 
@@ -123,12 +123,12 @@ const Main = (props) => {
               </div>
               <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="북마크" />
             </div>
-              {/* 설명 */}
-              <div class="description">
+            {/* 설명 */}
+            <div class="description">
               <Meta description={`${postData.UserId.name}`} /> : <Meta description={`${postData.content}`} />
-              </div>
+            </div>
 
-              {/* 댓글 란 Comment 안에 넣기 */}
+            {/* 댓글 란 Comment 안에 넣기 */}
             <Comment postData={postData} />
 
           </article >

@@ -6,18 +6,20 @@ const ImageSlider = (props) => {
     fontSize: '2em',
     fontWeight: 'bold',
   }
-  
+
   const slideNumberStyle = {  // 좌측 상단 숫자 스타일
     display: 'none',
   }
 
   let data = [];
-  {props.images.images.map((image, index) => (
-    data.push({
-      image: `http://3.34.51.7:5000/${image}`
-    })
-  ))}
-  
+  {
+    props.images.images.map((image, index) => (
+      data.push({
+        image: `http://3.36.91.168:5000/${image}`
+      })
+    ))
+  }
+
   return (
     <div>
       <div style={{ textAlign: "center" }}>

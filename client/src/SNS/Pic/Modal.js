@@ -10,7 +10,7 @@ const Modal = (props) => {
   useEffect(() => {
     setImg(props.modal);
   }, [])
-  
+
   const {
     setOpenModal,
   } = props;
@@ -29,14 +29,14 @@ const Modal = (props) => {
           <div class="main-image_box">
             <img
               class="pic"
-              src={`http://3.34.51.7:5000/${Img[props.index]}`}
+              src={`http://3.36.91.168:5000/${Img[props.index]}`}
               alt=""
             />
           </div>
           <div className="main-reaction_box">
             <header>
               <div class="profile-of-article">
-                <img class="img-profile pic" src={`http://3.34.51.7:5000/${userInfo.userData.image}`} />
+                <img class="img-profile pic" src={`http://3.36.91.168:5000/${userInfo.userData.image}`} />
                 <span class="userID main-id point-span">{userInfo.userData.name}</span>
               </div>
             </header>

@@ -41,7 +41,7 @@ export default function DetailPage(props) {
                         <LeftContainer>
                             <ImageContainer>
                                 <img
-                                    src={`http://3.34.51.7:5000/${props.imageUrl}`}
+                                    src={`http://3.36.91.168:5000/${props.imageUrl}`}
 
                                     alt={'사진'}
                                     style={{
@@ -97,16 +97,16 @@ export default function DetailPage(props) {
 
                         </LeftContainer>
                         <div>
-                                    <ClearTwoToneIcon
-                                        fontSize="large"
-                                        style={{
-                                            cursor: 'pointer',
-                                            marginTop: '-20%',
-                                            marginRight: '-28px',
-                                        }}
-                                        onClick={props.close}
-                                    />
-                                </div>
+                            <ClearTwoToneIcon
+                                fontSize="large"
+                                style={{
+                                    cursor: 'pointer',
+                                    marginTop: '-20%',
+                                    marginRight: '-28px',
+                                }}
+                                onClick={props.close}
+                            />
+                        </div>
                         <RightContainer>
                             <div
                                 style={{
@@ -129,10 +129,10 @@ export default function DetailPage(props) {
                                     overflow: 'auto',
                                 }}
                             >
-                            <PostName>{props.title}</PostName>
-                            <DetailContent>
-                                {props.review}
-                            </DetailContent>
+                                <PostName>{props.title}</PostName>
+                                <DetailContent>
+                                    {props.review}
+                                </DetailContent>
                             </CommentBox>
                         </RightContainer>
                     </MainContentContainer>

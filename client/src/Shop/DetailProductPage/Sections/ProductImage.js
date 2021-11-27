@@ -27,7 +27,7 @@ const ProductImage = (props) => {
           <ImageSlider detail={props.detail} />
           <video
             className="videobox"
-            src={`http://3.34.51.7:5000/${Video} `}
+            src={`http://3.36.91.168:5000/${Video} `}
             controls
             auto
             loop

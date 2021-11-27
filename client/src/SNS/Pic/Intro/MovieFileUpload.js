@@ -15,7 +15,7 @@ function FileUpload(props) {
     };
     formData.append("file", files[0]);
     console.log(files);
-    
+
     if (files[0].type == "video/mp4") {
       Axios.post("/api/mysql/album/write", formData, config).then(
         (response) => {
@@ -121,7 +121,7 @@ function FileUpload(props) {
           <div onClick={() => onDelete(image)}>
             <img
               style={{ minWidth: "300px", width: "300px", height: "240px" }}
-              src={`http://3.34.51.7:5000/${image}`}
+              src={`http://3.36.91.168:5000/${image}`}
               alt={`productImg-${index}`}
             />
           </div>

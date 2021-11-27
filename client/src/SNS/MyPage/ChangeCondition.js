@@ -272,14 +272,14 @@ const ChangeCondition = (props) => {
       alert("선택된 옵션이 없어요");
     }
   }
- 
+
   return (
     <Layout>
       <Sidebar>
         <Cards>
           <FlexWrapper>
             <ProfileSection>
-              <img src={`http://3.34.51.7:5000/${userImg}`} alt="profile" />
+              <img src={`http://3.36.91.168:5000/${userImg}`} alt="profile" />
               <hr />
               <h2>상태메세지</h2>
               <p>{userInfo.userData.message}</p>
