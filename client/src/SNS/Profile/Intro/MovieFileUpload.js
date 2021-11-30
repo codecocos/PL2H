@@ -88,7 +88,7 @@ function FileUpload(props) {
             <img
               className="sns-dropzone-image_box-img"
               style={{ width: "300px", height: "240px" }}
-              src={`http://3.34.186.68:5000/${image}`}
+              src={`http://3.35.173.131:5000/${image}`}
               alt={`productImg-${index}`}
             />
           </div>

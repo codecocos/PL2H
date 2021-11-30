@@ -21,7 +21,7 @@ const Modal = (props) => {
           <div class="main-image_box">
             <img
               class="pic"
-              src={`http://3.34.186.68:5000/${data[props.index].images}`}
+              src={`http://3.35.173.131:5000/${data[props.index].images}`}
               alt="프로필 사진"
             />
             {/* <ImageSlider images={postData} /> */}

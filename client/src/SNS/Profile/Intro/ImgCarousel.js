@@ -6,7 +6,7 @@ const ImgCarousel = (props) => {
   let items = [];
   for (let i = 0; i < imgs.length; i++) {
     let splitImg = imgs[i].split("\\");
-    items.push({ 'id': `${i}`, 'src': `http://3.34.186.68:5000/uploads/img/${splitImg[2]}` });
+    items.push({ 'id': `${i}`, 'src': `http://3.35.173.131:5000/uploads/img/${splitImg[2]}` });
   }
 
   return <SwiftSlider data={items} interval={5000} />

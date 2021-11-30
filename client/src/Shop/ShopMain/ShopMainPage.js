@@ -57,7 +57,7 @@ const ShopMainPage = (pdFilter) => {
         <a href={`/shop/product/${product._id}`}>
           <img
             className="shop-main-content-item_box-img"
-            src={`http://3.34.186.68:5000/${product.images[0]}`}
+            src={`http://3.35.173.131:5000/${product.images[0]}`}
             alt="productImage"
           />
           <div className="shop-main-content-item_box-info">
